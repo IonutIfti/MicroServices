@@ -14,10 +14,12 @@
         <module name="currency-exchange-service" />
         <module name="limit-service" />
         <module name="naming-server" />
+        <module name="beer-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="19" />
+      <module name="beer-service" target="20" />
       <module name="brewery" target="19" />
       <module name="currency-conversion-service" target="19" />
       <module name="currency-exchange-service" target="19" />
@@ -29,6 +31,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="beer-service" options="-parameters" />
       <module name="brewery" options="-parameters" />
       <module name="currency-conversion-service" options="-parameters" />
       <module name="currency-exchange-service" options="-parameters" />

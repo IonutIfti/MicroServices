@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/currency-conversion-service/pom.xml" />
         <option value="$PROJECT_DIR$/brewery/pom.xml" />
+        <option value="$PROJECT_DIR$/beer-service/pom.xml" />
       </list>
     </option>
   </component>
