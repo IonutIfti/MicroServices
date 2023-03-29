@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "ii.brewery",
+      "type": "ii.microservices.breweryclient.clients.BreweryClient",
+      "sourceType": "ii.microservices.breweryclient.clients.BreweryClient"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
