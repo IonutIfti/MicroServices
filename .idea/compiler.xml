@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="currency-conversion-service" />
         <module name="spring-cloud-config-server" />
-        <module name="brewery" />
         <module name="api-gateway" />
         <module name="currency-exchange-service" />
         <module name="brewery-client" />
@@ -18,18 +17,19 @@
         <module name="naming-server" />
         <module name="beer-service" />
       </profile>
+      <profile name="Annotation profile for brewery" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.3.Final/mapstruct-processor-1.5.3.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.3.Final/mapstruct-1.5.3.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+        </processorPath>
+        <module name="brewery" />
+      </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api-gateway" target="19" />
-      <module name="beer-service" target="20" />
-      <module name="brewery" target="19" />
-      <module name="brewery-client" target="20" />
-      <module name="currency-conversion-service" target="19" />
-      <module name="currency-exchange-service" target="19" />
-      <module name="limit-service" target="19" />
-      <module name="naming-server" target="19" />
-      <module name="spring-cloud-config-server" target="19" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
