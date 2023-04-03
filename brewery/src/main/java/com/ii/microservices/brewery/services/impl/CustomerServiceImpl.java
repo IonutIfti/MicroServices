@@ -11,9 +11,9 @@ import java.util.UUID;
 @Slf4j
 public class CustomerServiceImpl implements CustomerService {
     @Override
-    public CustomerDTO getCustomerById(UUID customerId) {
+    public CustomerDTO getCustomerById(Long customerId) {
         return CustomerDTO.builder()
-                .id(UUID.randomUUID())
+                .id(1278857254L)
                 .firstName("Johny")
                 .lastName("Wicker")
                 .email("wick@gmail.com")
@@ -40,12 +40,12 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void updateCustomer(UUID customerId, CustomerDTO customer) {
+    public void updateCustomer(Long customerId, CustomerDTO customer) {
         log.info("Updated customer with ID: {}",customerId);
     }
 
     @Override
-    public void deleteCustomer(UUID customerId) {
+    public void deleteCustomer(Long customerId) {
         log.info("Deleted customer with ID: {}",customerId);
 
     }

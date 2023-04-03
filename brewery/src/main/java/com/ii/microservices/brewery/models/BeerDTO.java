@@ -1,17 +1,12 @@
 package com.ii.microservices.brewery.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Version;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Null;
 import jakarta.validation.constraints.Positive;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.UUID;
 
 @Data
 @Getter
@@ -22,7 +17,7 @@ import java.util.UUID;
 public class BeerDTO {
 
     @Null
-    private UUID id;
+    private Long id;
     @NotBlank
     private String beerName;
     @NotBlank

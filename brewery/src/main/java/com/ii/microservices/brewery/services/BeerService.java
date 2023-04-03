@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.UUID;
 
 public interface BeerService {
-    BeerDTO getBeerById(UUID beerId);
+    BeerDTO getBeerById(Long beerId);
 
     BeerDTO saveFreshBeer(BeerDTO beerDTO);
 
-    void updateBeer(UUID beerId, BeerDTO beerDTO);
+    void updateBeer(Long beerId, BeerDTO beerDTO);
 
-    void deleteBeer(UUID beerId);
+    void deleteBeer(Long beerId);
     List<BeerDTO> getAllBeers();
 }
 

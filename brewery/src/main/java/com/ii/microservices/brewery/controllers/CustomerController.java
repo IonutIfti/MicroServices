@@ -17,7 +17,7 @@ import java.util.UUID;
 public class CustomerController {
     private final CustomerService customerService;
     @GetMapping("/{customerId}")
-    public ResponseEntity<CustomerDTO> getCustomerById(@PathVariable(name = "customerId")UUID customerId){
+    public ResponseEntity<CustomerDTO> getCustomerById(@PathVariable(name = "customerId")Long customerId){
         return new ResponseEntity<>(customerService.getCustomerById(customerId), HttpStatus.OK);
     }
     @GetMapping("/customers")
@@ -35,14 +35,14 @@ public class CustomerController {
 
     @PutMapping("/updateCustomer/{customerId}")
     public ResponseEntity<Object> updateCustomer(@RequestBody CustomerDTO customer,
-                               @PathVariable(name = "customerId")UUID customerId){
+                               @PathVariable(name = "customerId")Long customerId){
         customerService.updateCustomer(customerId,customer);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
     @DeleteMapping("/deleteCustomer/{customerId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteCustomer(@PathVariable(name="customerId")UUID customerId){
+    public void deleteCustomer(@PathVariable(name="customerId")Long customerId){
         customerService.deleteCustomer(customerId);
     }
 }

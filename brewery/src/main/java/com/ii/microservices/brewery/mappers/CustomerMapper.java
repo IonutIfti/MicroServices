@@ -4,7 +4,7 @@ import com.ii.microservices.brewery.entity.Customer;
 import com.ii.microservices.brewery.models.CustomerDTO;
 import org.mapstruct.Mapper;
 
-@Mapper
+
 public interface CustomerMapper {
     CustomerDTO customerToCustomerDTO(Customer customer);
     Customer customerDTOToCustomer(CustomerDTO customerDTO);

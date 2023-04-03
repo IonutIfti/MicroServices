@@ -2,8 +2,6 @@ package com.ii.microservices.brewery.models;
 
 import lombok.*;
 
-import java.util.UUID;
-
 @Data
 @Getter
 @Setter
@@ -11,7 +9,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 public class CustomerDTO {
-    private UUID id;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;

@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.UUID;
 
 public interface CustomerService {
-    CustomerDTO getCustomerById(UUID customerId);
+    CustomerDTO getCustomerById(Long customerId);
 
     List<CustomerDTO> getAllCustomers();
 
     CustomerDTO createCustomer(CustomerDTO customer);
 
-    void updateCustomer(UUID customerId, CustomerDTO customer);
+    void updateCustomer(Long customerId, CustomerDTO customer);
 
-    void deleteCustomer(UUID customerId);
+    void deleteCustomer(Long customerId);
 }
