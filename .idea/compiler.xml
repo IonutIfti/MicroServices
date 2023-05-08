@@ -9,10 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="currency-conversion-service" />
         <module name="spring-cloud-config-server" />
-        <module name="api-gateway" />
         <module name="brewery" />
+        <module name="api-gateway" />
         <module name="currency-exchange-service" />
+        <module name="brewery-client" />
         <module name="limit-service" />
+        <module name="beer-service" />
         <module name="naming-server" />
         <module name="beer-service" />
       </profile>
@@ -21,6 +23,7 @@
       <module name="api-gateway" target="19" />
       <module name="beer-service" target="20" />
       <module name="brewery" target="19" />
+      <module name="brewery-client" target="20" />
       <module name="currency-conversion-service" target="19" />
       <module name="currency-exchange-service" target="19" />
       <module name="limit-service" target="19" />
@@ -33,6 +36,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="beer-service" options="-parameters" />
       <module name="brewery" options="-parameters" />
+      <module name="brewery-client" options="-parameters" />
       <module name="currency-conversion-service" options="-parameters" />
       <module name="currency-exchange-service" options="-parameters" />
       <module name="limit-service" options="-parameters" />
