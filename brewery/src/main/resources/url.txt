@@ -1,0 +1,25 @@
+########## BEER ##########
+
+GET BY ID
+http://localhost:8081/api/v1/beer/{beerId}
+GET ALL
+http://localhost:8081/api/v1/beer/beers
+POST
+http://localhost:8081/api/v1/beer/createBeer/{beerId}
+PUT
+http://localhost:8081/api/v1/beer/updateBeer/{beerId}
+DELETE
+http://localhost:8081/api/v1/beer/deleteBeer/{beerId}
+
+########## CUSTOMER ##########
+
+GET BY ID
+http://localhost:8081/api/v1/customer/{customerId}
+GET ALL
+http://localhost:8081/api/v1/customer/customers
+POST
+http://localhost:8081/api/v1/customer/createCustomer
+PUT
+http://localhost:8081/api/v1/customer/updateCustomer/{customerId}
+DELETE
+http://localhost:8081/api/v1/customer/deleteCustomer/{customerId}
